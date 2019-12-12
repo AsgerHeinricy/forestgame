@@ -19,11 +19,11 @@ public class PlayerMovement : MonoBehaviour
 
         if (Input.GetKey(KeyCode.W) && (Input.GetKey(KeyCode.LeftShift)))
         {
-            MoveSpeed = 0.4f;
+            MoveSpeed = 0.2f;
         }
         else
         {
-            MoveSpeed = 0.2f;
+            MoveSpeed = 0.1f;
         }
     }
 }
