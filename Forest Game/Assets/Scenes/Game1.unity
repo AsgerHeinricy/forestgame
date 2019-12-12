@@ -240,11 +240,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70f51d7e3b6e2aa49805dedca637c423, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  radius: 20
-  interactionTransform: {fileID: 453649133}
-  isFocus: 0
-  player: {fileID: 0}
-  hasInteracted: 0
 --- !u!136 &453649130
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -349,6 +344,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9c5d6b75cd6beb4d84b3e5a19a9dfa1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  IsGrounded: 0
+  player: {fileID: 453649135}
   Rigid: {fileID: 453649134}
   MouseSensitivity: 3
   MoveSpeed: 0.2
@@ -365,14 +362,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5f43fdabaed35c46b312731f9a6c462, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 100
-  <currentHealth>k__BackingField: 0
-  damage:
-    baseValue: 0
-    modifiers: 
-  armor:
-    baseValue: 0
-    modifiers: 
 --- !u!114 &453649137
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -536,12 +525,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 830187637}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &1043285816 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 8f7380da49034cd488ddff94b1ac35d1,
-    type: 3}
-  m_PrefabInstance: {fileID: 830187637}
-  m_PrefabAsset: {fileID: 0}
 --- !u!136 &1043285817
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -584,13 +567,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62cc5f6effe008640ab1a20257a850da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  radius: 30
-  interactionTransform: {fileID: 1043285816}
-  isFocus: 0
-  player: {fileID: 0}
-  hasInteracted: 0
-  playerManager: {fileID: 0}
-  myStats: {fileID: 0}
 --- !u!114 &1043285820
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -603,10 +579,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9eefcba855cf83b40bb868d6c88dc358, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lookRadius: 10
-  target: {fileID: 0}
-  agent: {fileID: 0}
-  combat: {fileID: 0}
 --- !u!1 &1217730316
 GameObject:
   m_ObjectHideFlags: 0

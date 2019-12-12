@@ -65,6 +65,8 @@ public class WingsuitController : MonoBehaviour
 
     private PlayerMovement Player;
     public WingsuitController Wingsuit;
+    public CameraShake Camerashake;
+    public AudioListener WindAudio;
     private void Start()
     {
         // Make sure the player has a Rigidbody component
@@ -74,6 +76,7 @@ public class WingsuitController : MonoBehaviour
         IsGrounded = false;
         Player = GameObject.FindObjectOfType<PlayerMovement>();
         Wingsuit = GetComponent<WingsuitController>();
+
     }
 
     private void LateUpdate()
@@ -116,6 +119,8 @@ public class WingsuitController : MonoBehaviour
         if (IsGrounded == true)
         {
             Wingsuit.enabled = false;
+            Camerashake.enabled = false;
+            WindAudio.enabled = false;
         }
     }
     private void OnCollisionEnter(Collision collision)
@@ -123,7 +128,7 @@ public class WingsuitController : MonoBehaviour
         if (collision.collider.tag == "Mountains")
         {
             IsGrounded = true;
-            Player.IsGroundedPlayer = true;
+            Player.IsGrounded = true;
         }
     }
     private void Update()

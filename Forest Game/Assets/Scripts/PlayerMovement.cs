@@ -2,7 +2,8 @@
 
 public class PlayerMovement : MonoBehaviour
 {
-    public bool IsGroundedPlayer = false;
+    public bool IsGrounded = false;
+    public PlayerMovement player;
 
     #region "Variables"
     public Rigidbody Rigid;
@@ -13,8 +14,9 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-        if (IsGroundedPlayer == true)
+        if (IsGrounded == true)
         {
+            player.enabled = true;
             Rigid.MoveRotation(Rigid.rotation * Quaternion.Euler(new Vector3(0, Input.GetAxis("Mouse X") * MouseSensitivity, 0)));
             Rigid.MovePosition(transform.position + (transform.forward * Input.GetAxis("Vertical") * MoveSpeed) + (transform.right * Input.GetAxis("Horizontal") * MoveSpeed));
             if (Input.GetKeyDown(KeyCode.Space))
@@ -29,6 +31,9 @@ public class PlayerMovement : MonoBehaviour
                 MoveSpeed = 0.1f;
             }
         }
-    
+        if (IsGrounded == false)
+        {
+            //player.enabled = false;
+        }
     }
 }
