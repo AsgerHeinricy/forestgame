@@ -96,6 +96,7 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaAO: 1
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
+    m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
   m_UseShadowmask: 0
 --- !u!196 &4
@@ -206,6 +207,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -263,6 +265,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: mountain_Snow_000 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: edc40406f07f9cf4990807aa8b0fc368, type: 3}
+      propertyPath: m_TagString
+      value: Mountains
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: edc40406f07f9cf4990807aa8b0fc368, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -299,10 +305,6 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -6
       objectReference: {fileID: 0}
-    - target: {fileID: 2300000, guid: edc40406f07f9cf4990807aa8b0fc368, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 0060a88cd6252a146aeb6a9652d03869, type: 2}
     - target: {fileID: 400002, guid: edc40406f07f9cf4990807aa8b0fc368, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.005
@@ -335,6 +337,10 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: edc40406f07f9cf4990807aa8b0fc368, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0060a88cd6252a146aeb6a9652d03869, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: edc40406f07f9cf4990807aa8b0fc368, type: 3}
 --- !u!4 &373689374 stripped
@@ -386,6 +392,7 @@ MonoBehaviour:
   maxAngle: 55
   percentage: 0
   am: {fileID: 24100000, guid: 95e6e9d92746f624bbdce6092940fef0, type: 2}
+  IsGrounded: 0
 --- !u!114 &387780560
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -446,6 +453,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -780,6 +788,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: mountain_Snow_000 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: edc40406f07f9cf4990807aa8b0fc368, type: 3}
+      propertyPath: m_TagString
+      value: Mountains
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: edc40406f07f9cf4990807aa8b0fc368, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -816,10 +828,6 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -6
       objectReference: {fileID: 0}
-    - target: {fileID: 2300000, guid: edc40406f07f9cf4990807aa8b0fc368, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 0060a88cd6252a146aeb6a9652d03869, type: 2}
     - target: {fileID: 400002, guid: edc40406f07f9cf4990807aa8b0fc368, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.005
@@ -852,6 +860,10 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: edc40406f07f9cf4990807aa8b0fc368, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0060a88cd6252a146aeb6a9652d03869, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: edc40406f07f9cf4990807aa8b0fc368, type: 3}
 --- !u!4 &511012924 stripped
@@ -891,6 +903,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: mountain_Snow_000 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: edc40406f07f9cf4990807aa8b0fc368, type: 3}
+      propertyPath: m_TagString
+      value: Mountains
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: edc40406f07f9cf4990807aa8b0fc368, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -927,10 +943,6 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -5.6
       objectReference: {fileID: 0}
-    - target: {fileID: 2300000, guid: edc40406f07f9cf4990807aa8b0fc368, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 0060a88cd6252a146aeb6a9652d03869, type: 2}
     - target: {fileID: 400002, guid: edc40406f07f9cf4990807aa8b0fc368, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.005
@@ -963,6 +975,10 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: edc40406f07f9cf4990807aa8b0fc368, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0060a88cd6252a146aeb6a9652d03869, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: edc40406f07f9cf4990807aa8b0fc368, type: 3}
 --- !u!4 &669966749 stripped
@@ -983,7 +999,7 @@ GameObject:
   - component: {fileID: 960885652}
   m_Layer: 0
   m_Name: Mountains
-  m_TagString: Untagged
+  m_TagString: Mountains
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1069,7 +1085,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 91086ce8f26f9174594a4b01fcb7a4fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  wc: {fileID: 0}
+  wc: {fileID: 387780559}
   shaking: 0.5
 --- !u!81 &968509264
 AudioListener:
@@ -1147,8 +1163,9 @@ Light:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 976067187}
   m_Enabled: 1
-  serializedVersion: 9
+  serializedVersion: 10
   m_Type: 1
+  m_Shape: 0
   m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
   m_Intensity: 1
   m_Range: 10
@@ -1264,6 +1281,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: mountain_Snow_000 (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: edc40406f07f9cf4990807aa8b0fc368, type: 3}
+      propertyPath: m_TagString
+      value: Mountains
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: edc40406f07f9cf4990807aa8b0fc368, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -1300,10 +1321,6 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -5.5
       objectReference: {fileID: 0}
-    - target: {fileID: 2300000, guid: edc40406f07f9cf4990807aa8b0fc368, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 0060a88cd6252a146aeb6a9652d03869, type: 2}
     - target: {fileID: 400002, guid: edc40406f07f9cf4990807aa8b0fc368, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.005
@@ -1336,6 +1353,10 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: edc40406f07f9cf4990807aa8b0fc368, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0060a88cd6252a146aeb6a9652d03869, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: edc40406f07f9cf4990807aa8b0fc368, type: 3}
 --- !u!4 &1269988727 stripped
@@ -1354,6 +1375,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: edc40406f07f9cf4990807aa8b0fc368, type: 3}
       propertyPath: m_Name
       value: mountain_Snow_000 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: edc40406f07f9cf4990807aa8b0fc368, type: 3}
+      propertyPath: m_TagString
+      value: Mountains
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: edc40406f07f9cf4990807aa8b0fc368, type: 3}
       propertyPath: m_RootOrder
@@ -1391,10 +1416,6 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -5.5
       objectReference: {fileID: 0}
-    - target: {fileID: 2300000, guid: edc40406f07f9cf4990807aa8b0fc368, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 0060a88cd6252a146aeb6a9652d03869, type: 2}
     - target: {fileID: 400002, guid: edc40406f07f9cf4990807aa8b0fc368, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.005
@@ -1427,6 +1448,10 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: edc40406f07f9cf4990807aa8b0fc368, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0060a88cd6252a146aeb6a9652d03869, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: edc40406f07f9cf4990807aa8b0fc368, type: 3}
 --- !u!4 &1313315439 stripped
@@ -1445,6 +1470,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: edc40406f07f9cf4990807aa8b0fc368, type: 3}
       propertyPath: m_Name
       value: mountain_Snow_000 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: edc40406f07f9cf4990807aa8b0fc368, type: 3}
+      propertyPath: m_TagString
+      value: Mountains
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: edc40406f07f9cf4990807aa8b0fc368, type: 3}
       propertyPath: m_RootOrder
@@ -1482,10 +1511,6 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -5.6
       objectReference: {fileID: 0}
-    - target: {fileID: 2300000, guid: edc40406f07f9cf4990807aa8b0fc368, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 0060a88cd6252a146aeb6a9652d03869, type: 2}
     - target: {fileID: 400002, guid: edc40406f07f9cf4990807aa8b0fc368, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.005
@@ -1518,6 +1543,10 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: edc40406f07f9cf4990807aa8b0fc368, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0060a88cd6252a146aeb6a9652d03869, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: edc40406f07f9cf4990807aa8b0fc368, type: 3}
 --- !u!4 &1482819117 stripped
@@ -1577,6 +1606,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: mountain_Snow_000 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: edc40406f07f9cf4990807aa8b0fc368, type: 3}
+      propertyPath: m_TagString
+      value: Mountains
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: edc40406f07f9cf4990807aa8b0fc368, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -1613,10 +1646,6 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -4.5
       objectReference: {fileID: 0}
-    - target: {fileID: 2300000, guid: edc40406f07f9cf4990807aa8b0fc368, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 0060a88cd6252a146aeb6a9652d03869, type: 2}
     - target: {fileID: 400002, guid: edc40406f07f9cf4990807aa8b0fc368, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.005
@@ -1649,6 +1678,10 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: edc40406f07f9cf4990807aa8b0fc368, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0060a88cd6252a146aeb6a9652d03869, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: edc40406f07f9cf4990807aa8b0fc368, type: 3}
 --- !u!4 &2120409050 stripped
@@ -1667,6 +1700,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: edc40406f07f9cf4990807aa8b0fc368, type: 3}
       propertyPath: m_Name
       value: mountain_Snow_000 (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: edc40406f07f9cf4990807aa8b0fc368, type: 3}
+      propertyPath: m_TagString
+      value: Mountains
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: edc40406f07f9cf4990807aa8b0fc368, type: 3}
       propertyPath: m_RootOrder
@@ -1704,10 +1741,6 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -5.5
       objectReference: {fileID: 0}
-    - target: {fileID: 2300000, guid: edc40406f07f9cf4990807aa8b0fc368, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 0060a88cd6252a146aeb6a9652d03869, type: 2}
     - target: {fileID: 400002, guid: edc40406f07f9cf4990807aa8b0fc368, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.005
@@ -1740,6 +1773,10 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: edc40406f07f9cf4990807aa8b0fc368, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0060a88cd6252a146aeb6a9652d03869, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: edc40406f07f9cf4990807aa8b0fc368, type: 3}
 --- !u!4 &2121501755 stripped

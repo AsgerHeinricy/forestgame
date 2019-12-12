@@ -2,6 +2,7 @@
 
 public class PlayerMovement : MonoBehaviour
 {
+    public bool IsGroundedPlayer = false;
 
     #region "Variables"
     public Rigidbody Rigid;
@@ -12,18 +13,22 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-        Rigid.MoveRotation(Rigid.rotation * Quaternion.Euler(new Vector3(0, Input.GetAxis("Mouse X") * MouseSensitivity, 0)));
-        Rigid.MovePosition(transform.position + (transform.forward * Input.GetAxis("Vertical") * MoveSpeed) + (transform.right * Input.GetAxis("Horizontal") * MoveSpeed));
-        if (Input.GetKeyDown(KeyCode.Space))
-            Rigid.AddForce(transform.up * JumpForce);
+        if (IsGroundedPlayer == true)
+        {
+            Rigid.MoveRotation(Rigid.rotation * Quaternion.Euler(new Vector3(0, Input.GetAxis("Mouse X") * MouseSensitivity, 0)));
+            Rigid.MovePosition(transform.position + (transform.forward * Input.GetAxis("Vertical") * MoveSpeed) + (transform.right * Input.GetAxis("Horizontal") * MoveSpeed));
+            if (Input.GetKeyDown(KeyCode.Space))
+                Rigid.AddForce(transform.up * JumpForce);
 
-        if (Input.GetKey(KeyCode.W) && (Input.GetKey(KeyCode.LeftShift)))
-        {
-            MoveSpeed = 0.2f;
+            if (Input.GetKey(KeyCode.W) && (Input.GetKey(KeyCode.LeftShift)))
+            {
+                MoveSpeed = 0.2f;
+            }
+            else
+            {
+                MoveSpeed = 0.1f;
+            }
         }
-        else
-        {
-            MoveSpeed = 0.1f;
-        }
+    
     }
 }
